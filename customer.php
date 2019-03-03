@@ -1,8 +1,8 @@
+
+43 lines (38 sloc) 1.45 KB
 <?php
-
 // include the class that handles database connections
-require "../database/database.php";
-
+require "../Prog01/database.php";
 // include the class containing functions/methods for "customer" table
 // Note: this application uses "customer" table, not "cusotmers" table
 require "customers.class.php";
@@ -14,11 +14,9 @@ if(isset($_GET["id"]))          $id = $_GET["id"];
 if(isset($_POST["name"]))       $cust->name = $_POST["name"];
 if(isset($_POST["email"]))      $cust->email = $_POST["email"];
 if(isset($_POST["mobile"]))     $cust->mobile = $_POST["mobile"];
-
 // "fun" is short for "function" to be invoked 
 if(isset($_GET["fun"])) $fun = $_GET["fun"];
 else $fun = "display_list"; 
-
 switch ($fun) {
     case "display_list":        $cust->list_records();
         break;
