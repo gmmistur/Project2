@@ -1,10 +1,10 @@
 <?php
 class Database
 {
-	private static $dbName = 'abpopko355wi19' ;
+	private static $dbName = 'gmmistur355wi19' ;
 	private static $dbHost = '10.8.30.49' ;
-	private static $dbUsername = 'abpopko355wi19';
-	private static $dbUserPassword = 'Nuggets1';
+	private static $dbUsername = 'gmmistur355wi19';
+	private static $dbUserPassword = 'gmmisturdbwi19g';
 	private static $cont  = null;
 	public function __construct() {
 		exit('Init function is not allowed');
