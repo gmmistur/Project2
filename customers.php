@@ -1,5 +1,5 @@
 <?php
-require "database.php";
+require "../Project1/database.php";
 require "customer.class.php";
 $cust = new Customer();
 if(isset($_POST["name"])) $cust->name = $_POST["name"];
