@@ -1,5 +1,4 @@
 <?php
-
 class Customer { 
     public $id;
     public $name;
@@ -10,7 +9,7 @@ class Customer {
     private $emailError = null;
     private $mobileError = null;
     private $title = "Customer";
-    private $tableName = "customer";
+    private $tableName = "customers";
     
     function create_record() { // display "create" form
         $this->generate_html_top (1);
@@ -191,7 +190,6 @@ class Customer {
                             </div>
                         </form>
                     </div>
-
                 </div> <!-- /container -->
             </body>
         </html>
@@ -256,7 +254,7 @@ class Customer {
         echo "
             </head>
             <body>
-                <a href='https://github.com/cis355/PhpProject1' target='_blank'>Github</a><br />
+                <a href='https://github.com/CrossCarrion/Prog02' target='_blank'>Github</a><br />
                 <div class='container'>
                     <p class='row'>
                         <h3>$this->title" . "s" . "</h3>
@@ -298,9 +296,7 @@ class Customer {
                         </table>
                     </div>
                 </div>
-
             </body>
-
         </html>
                     ";  
     } // end function list_records()
