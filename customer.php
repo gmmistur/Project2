@@ -2,7 +2,7 @@
 43 lines (38 sloc) 1.45 KB
 <?php
 // include the class that handles database connections
-require "../Prog01/database.php";
+require "../Project1/database.php";
 // include the class containing functions/methods for "customer" table
 // Note: this application uses "customer" table, not "cusotmers" table
 require "customers.class.php";
